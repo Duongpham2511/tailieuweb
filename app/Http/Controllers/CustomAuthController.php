@@ -151,6 +151,6 @@ class CustomAuthController extends Controller
         var_dump($cookie);
         die();		
         }		
-//concac
+
 
 }
